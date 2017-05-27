@@ -1,0 +1,4 @@
+%h2= @task.title
+%p= @task.description
+
+= button_to "Back", tasks_path, method: :get if current_user

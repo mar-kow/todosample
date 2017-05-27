@@ -1,0 +1,7 @@
+%h4 Your tasks
+
+- @task.each do |task|
+  %p
+    = link_to task.title, task
+
+= button_to "Add task", new_task_path, method: :get if current_user

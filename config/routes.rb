@@ -10,4 +10,6 @@ Rails.application.routes.draw do
       root 'devise/sessions#new', ad: :unauthenticated_root
     end
   end
+
+  resources :tasks
 end

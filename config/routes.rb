@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     end
 
     unauthenticated do
-    root 'devise/sessions#new', ad: :unauthenticated_root
+      root 'devise/sessions#new', ad: :unauthenticated_root
     end
   end
 end
